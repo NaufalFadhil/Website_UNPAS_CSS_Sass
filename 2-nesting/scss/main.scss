@@ -1,0 +1,64 @@
+// .main {
+//     background-color: salmon;
+
+//     .main-heading {
+//         font-size: 2em;
+//     }
+
+//     .main-paragraph {
+//         font-size: 1.4em;
+//     }
+// }
+
+// .main,
+// footer {
+
+//     h1,
+//     p {
+//         letter-spacing: 1px;
+//     }
+// }
+
+
+// KARAKTER AMPERSAND
+// & MENUNJUKKAN PARENT 
+// .main {
+//     .container & {
+//         background-color: lightblue;
+//     }
+
+//     .main-heading {
+//         font-size: 2em;
+//     }
+
+//     // MENAMBAHKAN SUDO CLASS
+//     // HOVER AKTIF VISITED
+//     // INI MENGACU KE MAINNYA
+//     &:hover {
+//         background: salmon;
+//     }
+// }
+
+
+// MENGENERATE OROMATIS NAMA DARI PARENT NYA
+.main {
+    & &-heading {
+        font-size: 2em;
+    }
+
+    // NESTINGNYA ILANG JADI HARUS DITAMBAH SATU LAGI
+    & &-paragraph {
+        font-size: 1.4em;
+    }
+}
+
+// BISA JUGA GINI
+.footer {
+    #{&}-heading {
+        font-size: 2em;
+    }
+
+    #{&}-paragraph {
+        font-size: 1.4em;
+    }
+}

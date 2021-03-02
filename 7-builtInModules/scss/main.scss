@@ -1,0 +1,46 @@
+$warna-dasar: salmon;
+
+h1 {
+    color: $warna-dasar;
+    font-family: arial, helcativa, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+
+
+// BUILT-IN MODULES: COLOR
+
+h1 {
+    // adjust-color()
+    // color: adjust-color($color: $warna-dasar, $red: -50, $green: 100, $blue: 100);
+    // color: adjust-hue($warna-dasar, -80deg);
+    // COMPLEMENT: WARNA YANG BERLAWANAN ARAH 180deg
+    // color: complement($warna-dasar)
+    //color: darken($warna-dasar, $amount: 50%);
+
+    // LIGHTEN
+    //color: lighten($warna-dasar, $amount: 20%);
+
+
+    // SATURATE: LEBIH TERANG TAPI SEDIKIT
+    // SEBUAH WARNA MEMIL;IKI DERAJAT SATURASI DEFAULT, JIKA TIDAK BISA BERARTI SUDAH MENTOK
+    //color: saturate($warna-dasar, 20%);
+
+
+    // desaturate
+    //color: desaturate($warna-dasar, 80%);
+
+    // GREYSCALE
+    // MEMBUAT SEBUAH WARNA DESATURATE 100%
+    //color: grayscale($warna-dasar);
+
+    // MIX
+    // CAMPURAN ANTARA WARNA
+    // color: mix($warna-dasar, blue, $weight: 80%);
+
+    // fade-in
+    // color: fade-in(rgba(250, 128, 114, 0.2), 0.5);
+
+    // fade-out
+    color: fade-out($warna-dasar, $amount: 0.4);
+
+}

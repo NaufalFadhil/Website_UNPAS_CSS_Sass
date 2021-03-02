@@ -1,0 +1,50 @@
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0.7em;
+}
+.header ul li {
+  display: inline-block;
+}
+.header ul li {
+  background-color: black;
+}
+.header ul li a {
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 600px;
+  height: 400px;
+  background-color: #ddd;
+}
+.container .box {
+  width: 60px;
+  height: 60px;
+  background-color: lawngreen;
+  text-align: center;
+  line-height: 60px;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer ul li {
+  display: inline-block;
+}
+.footer ul li {
+  background-color: salmon;
+}
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

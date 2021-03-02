@@ -1,0 +1,55 @@
+// CSS VARIABLE
+// SEMUA ELEMENT PADA CSS BISA MENGAKSES VAIABLE INI
+// :root {
+//     --primary-color: lightblue;
+//     --secondary-color: salmon;
+//     --text-color: blue;
+// }
+
+// body {
+//     background-color: var(--primary-color);
+// }
+
+// h1 {
+//     color: var(--text-color);
+// }
+
+
+
+// VARIABLE PADA SASS //
+
+// VARIABLE GLOBAL
+$primary-color: green;
+$text-color: blue;
+
+// - dan _ dianggap sama
+
+
+// body {
+//     // VARIABLE LOKAL YANG BISA DI UBAH JADI GLOBAL
+//     $primary-color: salmon !global;
+//     // VARIABEL LOKAL
+//     $secondary-color: lightblue;
+//     background-color: $primary-color;
+// }
+
+// h1 {
+//     color: $text-color;
+//     background-color: $primary-color;
+// }
+
+
+// MAP
+// MENYIMPAN BEBERAPA NILAI DALAM SATU VARIABLE
+// BIASANYA:
+$alert-danger: red;
+$alert-success: green;
+
+$alert: ('danger': red,
+    'success': green,
+    'warning': orange,
+);
+
+h1 {
+    color: map-get($alert, 'success');
+}
